@@ -132,6 +132,13 @@ public class EssenceConversionMachineBlockEntity extends BlockEntity implements 
             if (progress >= maxProgress) {
                 craftAdvanceItem(advanceRecipe.get());
                 resetProgress();
+                if (!level.isClientSide()) {
+                    level.playSound(null, pos,
+                            DTSounds.ZAOYIN.get(),
+                            SoundSource.BLOCKS,
+                            1.0F,
+                            1.0F);
+                }
             }
         }else {
             resetProgress();

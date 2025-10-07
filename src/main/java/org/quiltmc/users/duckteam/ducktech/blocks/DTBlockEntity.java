@@ -19,7 +19,6 @@ public class DTBlockEntity {
             BLOCK_ENTITY_TYPES.register("advance_shredder_block_entity",
                     () -> BlockEntityType.Builder.of(AdvanceShredderBlockEntity::new, DTBlocks.ADVANCE_SHREDDER.get()).build(null));
 
-
     public static final RegistryObject<BlockEntityType<LevitationMachineBlockEntity>> LEVITATION_MACHINE_BLOCK_ENTITY =
             BLOCK_ENTITY_TYPES.register("levitation_machine_block_entity", () -> BlockEntityType.Builder.of(
                     LevitationMachineBlockEntity::new, DTBlocks.LEVITATION_MACHINE.get()).build(null));

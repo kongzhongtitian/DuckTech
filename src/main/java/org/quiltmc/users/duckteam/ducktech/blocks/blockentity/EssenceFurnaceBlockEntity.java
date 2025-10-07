@@ -5,6 +5,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.player.Inventory;
@@ -21,6 +22,7 @@ import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.blocks.DTBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.gui.essence_furnace.EssenceFurnaceMenu;
 import org.quiltmc.users.duckteam.ducktech.items.DTItems;
+import org.quiltmc.users.duckteam.ducktech.sounds.DTSounds;
 
 public class EssenceFurnaceBlockEntity extends DTBaseBlockEntity implements MenuProvider {
     protected final ContainerData data;
@@ -95,6 +97,13 @@ public class EssenceFurnaceBlockEntity extends DTBaseBlockEntity implements Menu
                 if (progress < maxProgress) {
                     progress++;
                 } else {
+                    if (!level.isClientSide()) {
+                        level.playSound(null, pos,
+                                DTSounds.ZAOYIN.get(),
+                                SoundSource.BLOCKS,
+                                1.0F,
+                                1.0F);
+                    }
                     ItemStack outputStack = getItemStackHandler().getStackInSlot(1);
                     ItemStack item = DTItems.BASIC_ESSENCE.get().getDefaultInstance();
 

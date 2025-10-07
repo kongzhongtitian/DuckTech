@@ -2,12 +2,14 @@ package org.quiltmc.users.duckteam.ducktech.blocks.blockentity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.quiltmc.users.duckteam.ducktech.blocks.DTBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.items.DTItems;
+import org.quiltmc.users.duckteam.ducktech.sounds.DTSounds;
 
 public class AirEssenceCollectorBlockEntity extends BlockEntity {
     private boolean isActive = false;
@@ -38,6 +40,13 @@ public class AirEssenceCollectorBlockEntity extends BlockEntity {
                 if (currentTime < 80) {
                     currentTime++;
                 } else {
+                    if (!level.isClientSide()) {
+                        level.playSound(null, pos,
+                                DTSounds.ZAOYIN.get(),
+                                SoundSource.BLOCKS,
+                                1.0F,
+                                1.0F);
+                    }
                     ItemEntity outputEntity = new ItemEntity(
                             level,
                             pos.getX() + 0.5,
