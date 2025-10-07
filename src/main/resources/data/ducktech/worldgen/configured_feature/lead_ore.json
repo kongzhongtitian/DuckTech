@@ -1,16 +1,25 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 16,
-    "discard_chance_on_air_exposure": 0,
+    "discard_chance_on_air_exposure": 0.0,
+    "size": 17,
     "targets": [
       {
-        "target": {
-          "predicate_type": "tag_match",
-          "tag": "stone_ore_replaceables"
-        },
         "state": {
           "Name": "ducktech:lead_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
+        }
+      },
+      {
+        "state": {
+          "Name": "ducktech:deepslate_lead_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       }
     ]

@@ -1,9 +1,9 @@
 {
-  "feature": "ducktech:aluminum_ore",
+  "feature": "ducktech:lead_ore",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 10
+      "count": 30
     },
     {
       "type": "minecraft:in_square"
@@ -12,11 +12,11 @@
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:uniform",
-        "max_inclusive": {
-          "absolute": 72
-        },
         "min_inclusive": {
-          "above_bottom": 0
+          "absolute": -63
+        },
+        "max_inclusive": {
+          "absolute": 80
         }
       }
     },
