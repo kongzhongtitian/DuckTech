@@ -74,6 +74,7 @@
   "block.ducktech.void_hopper" : "虚空漏斗",
   "block.ducktech.essence_furnace" : "精华炉",
   "block.ducktech.essence_conversion_machine": "精华转化机",
+  "item.ducktech.bronze_nugget": "Bronze Nugget",
 
   "jei.tooltip.time": "耗时",
   "subtitles.ducktech.zaoyin": "机器：噪音"
