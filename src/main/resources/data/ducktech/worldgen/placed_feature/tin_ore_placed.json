@@ -1,9 +1,9 @@
 {
-  "feature": "ducktech:lead_ore",
+  "feature": "ducktech:tin_ore",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 30
+      "count": 20
     },
     {
       "type": "minecraft:in_square"
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "absolute": -63
+          "absolute": -64
         },
         "max_inclusive": {
-          "absolute": 80
+          "absolute": 72
         }
       }
     },
