@@ -14,16 +14,15 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.users.duckteam.ducktech.api.block.ATBaseBlockEntity;
+import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.blocks.DTBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.gui.essence_furnace.EssenceFurnaceMenu;
 import org.quiltmc.users.duckteam.ducktech.items.DTItems;
 
-public class EssenceFurnaceBlockEntity extends ATBaseBlockEntity implements MenuProvider {
+public class EssenceFurnaceBlockEntity extends DTBaseBlockEntity implements MenuProvider {
     protected final ContainerData data;
     private int progress = 0;
     private int maxProgress = 40;

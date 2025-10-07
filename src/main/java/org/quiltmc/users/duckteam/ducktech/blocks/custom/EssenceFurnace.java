@@ -6,8 +6,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -15,11 +13,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.users.duckteam.ducktech.api.block.ATBaseBlock;
-import org.quiltmc.users.duckteam.ducktech.blocks.blockentity.AdvanceShredderBlockEntity;
+import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseBlock;
 import org.quiltmc.users.duckteam.ducktech.blocks.blockentity.EssenceFurnaceBlockEntity;
 
-public class EssenceFurnace extends ATBaseBlock {
+public class EssenceFurnace extends DTBaseBlock {
     public EssenceFurnace(Properties p_49795_) {
         super(p_49795_);
     }

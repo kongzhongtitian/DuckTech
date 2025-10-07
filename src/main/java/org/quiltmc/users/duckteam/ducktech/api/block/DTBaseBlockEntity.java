@@ -7,8 +7,6 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.world.Containers;
 import net.minecraft.world.SimpleContainer;
-import net.minecraft.world.WorldlyContainer;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,13 +20,13 @@ import org.jetbrains.annotations.Nullable;
 /**
  * 抽象的方块实体类，用于实现DT机器方块实体的基础功能
  */
-public abstract class ATBaseBlockEntity extends BlockEntity  {
+public abstract class DTBaseBlockEntity extends BlockEntity  {
     public ItemStackHandler itemStackHandler;
 
-    public ATBaseBlockEntity(BlockEntityType<?> p_155228_, BlockPos p_155229_, BlockState p_155230_) {
+    public DTBaseBlockEntity(BlockEntityType<?> p_155228_, BlockPos p_155229_, BlockState p_155230_) {
         super(p_155228_, p_155229_, p_155230_);
     }
-    public ATBaseBlockEntity(int size , BlockEntityType<?> p_155228_, BlockPos p_155229_, BlockState p_155230_) {
+    public DTBaseBlockEntity(int size , BlockEntityType<?> p_155228_, BlockPos p_155229_, BlockState p_155230_) {
         super(p_155228_, p_155229_, p_155230_);
         setItemStackHandler(size);
     }
