@@ -50,6 +50,7 @@ public class DTItems {
     public static final RegistryObject<Item> ALUMINUM_NUGGET = registerSimpleItem("aluminum_nugget");
     public static final RegistryObject<Item> TIN_NUGGET = registerSimpleItem("tin_nugget");
     public static final RegistryObject<Item> SILVER_NUGGET = registerSimpleItem("silver_nugget");
+    public static final RegistryObject<Item> BRONZE_NUGGET = registerSimpleItem("bronze_nugget");
 
     //粗
     public static final RegistryObject<Item> RAW_LEAD = registerSimpleItem("raw_lead");
