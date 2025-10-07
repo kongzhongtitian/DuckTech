@@ -139,13 +139,13 @@ Adding input to inheritance map
 Processing entries
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/gui/DTBaseMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/gui/DTBaseMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlock/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V from net/minecraft/world/level/block/state/BlockBehaviour/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V: onRemove -> m_6810_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag; from net/minecraft/world/level/block/entity/BlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag;: getUpdateTag -> m_5995_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet; from net/minecraft/world/level/block/entity/BlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet;: getUpdatePacket -> m_58483_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/gui/DTBaseScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag; from net/minecraft/world/level/block/entity/BlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag;: getUpdateTag -> m_5995_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet; from net/minecraft/world/level/block/entity/BlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet;: getUpdatePacket -> m_58483_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlock/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V from net/minecraft/world/level/block/state/BlockBehaviour/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V: onRemove -> m_6810_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
+Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/AdvanceShredderBlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag; from net/minecraft/world/level/block/entity/BlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag;: getUpdateTag -> m_5995_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/AdvanceShredderBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/AdvanceShredderBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
@@ -155,11 +155,31 @@ Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/bl
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/AdvanceShredderBlockEntity$2/getCount()I from net/minecraft/world/inventory/ContainerData/getCount()I: getCount -> m_6499_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/AdvanceShredderBlockEntity$2/get(I)I from net/minecraft/world/inventory/ContainerData/get(I)I: get -> m_6413_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/AdvanceShredderBlockEntity$2/set(II)V from net/minecraft/world/inventory/ContainerData/set(II)V: set -> m_8050_
-Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/api/gui/DTBaseScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/AirEssenceCollectorBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/AirEssenceCollectorBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag; from net/minecraft/world/level/block/entity/BlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag;: getUpdateTag -> m_5995_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet; from net/minecraft/world/level/block/entity/BlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet;: getUpdatePacket -> m_58483_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/getDisplayName()Lnet/minecraft/network/chat/Component; from net/minecraft/world/MenuProvider/getDisplayName()Lnet/minecraft/network/chat/Component;: getDisplayName -> m_5446_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity$2/getCount()I from net/minecraft/world/inventory/ContainerData/getCount()I: getCount -> m_6499_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity$2/get(I)I from net/minecraft/world/inventory/ContainerData/get(I)I: get -> m_6413_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity$2/set(II)V from net/minecraft/world/inventory/ContainerData/set(II)V: set -> m_8050_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/advance_shredder/AdvanceShredderMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/advance_shredder/AdvanceShredderMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity$1/getCount()I from net/minecraft/world/inventory/ContainerData/getCount()I: getCount -> m_6499_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity$1/get(I)I from net/minecraft/world/inventory/ContainerData/get(I)I: get -> m_6413_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity$1/set(II)V from net/minecraft/world/inventory/ContainerData/set(II)V: set -> m_8050_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity/getDisplayName()Lnet/minecraft/network/chat/Component; from net/minecraft/world/MenuProvider/getDisplayName()Lnet/minecraft/network/chat/Component;: getDisplayName -> m_5446_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/LevitationMachineBlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag; from net/minecraft/world/level/block/entity/BlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag;: getUpdateTag -> m_5995_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/LevitationMachineBlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet; from net/minecraft/world/level/block/entity/BlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet;: getUpdatePacket -> m_58483_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/LevitationMachineBlockEntity/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/LevitationMachineBlockEntity/getDisplayName()Lnet/minecraft/network/chat/Component; from net/minecraft/world/MenuProvider/getDisplayName()Lnet/minecraft/network/chat/Component;: getDisplayName -> m_5446_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/advanceshredder/AdvanceShredderRecipe/canCraftInDimensions(II)Z from net/minecraft/world/item/crafting/Recipe/canCraftInDimensions(II)Z: canCraftInDimensions -> m_8004_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/advanceshredder/AdvanceShredderRecipe/getResultItem(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/item/crafting/Recipe/getResultItem(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;: getResultItem -> m_8043_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/advanceshredder/AdvanceShredderRecipe/getIngredients()Lnet/minecraft/core/NonNullList; from net/minecraft/world/item/crafting/Recipe/getIngredients()Lnet/minecraft/core/NonNullList;: getIngredients -> m_7527_
@@ -176,15 +196,6 @@ Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/cu
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/shredder/ShredderRecipe/assemble(Lnet/minecraft/world/Container;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/item/crafting/Recipe/assemble(Lnet/minecraft/world/Container;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;: assemble -> m_5874_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/shredder/ShredderRecipe/getType()Lnet/minecraft/world/item/crafting/RecipeType; from net/minecraft/world/item/crafting/Recipe/getType()Lnet/minecraft/world/item/crafting/RecipeType;: getType -> m_6671_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/shredder/ShredderRecipe/getSerializer()Lnet/minecraft/world/item/crafting/RecipeSerializer; from net/minecraft/world/item/crafting/Recipe/getSerializer()Lnet/minecraft/world/item/crafting/RecipeSerializer;: getSerializer -> m_7707_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag; from net/minecraft/world/level/block/entity/BlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag;: getUpdateTag -> m_5995_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet; from net/minecraft/world/level/block/entity/BlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet;: getUpdatePacket -> m_58483_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity/getDisplayName()Lnet/minecraft/network/chat/Component; from net/minecraft/world/MenuProvider/getDisplayName()Lnet/minecraft/network/chat/Component;: getDisplayName -> m_5446_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity$2/getCount()I from net/minecraft/world/inventory/ContainerData/getCount()I: getCount -> m_6499_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity$2/get(I)I from net/minecraft/world/inventory/ContainerData/get(I)I: get -> m_6413_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceConversionMachineBlockEntity$2/set(II)V from net/minecraft/world/inventory/ContainerData/set(II)V: set -> m_8050_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/essence_conversion_machine/EssenceConversionMachineRecipe/canCraftInDimensions(II)Z from net/minecraft/world/item/crafting/Recipe/canCraftInDimensions(II)Z: canCraftInDimensions -> m_8004_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/essence_conversion_machine/EssenceConversionMachineRecipe/getResultItem(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/item/crafting/Recipe/getResultItem(Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;: getResultItem -> m_8043_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/essence_conversion_machine/EssenceConversionMachineRecipe/getIngredients()Lnet/minecraft/core/NonNullList; from net/minecraft/world/item/crafting/Recipe/getIngredients()Lnet/minecraft/core/NonNullList;: getIngredients -> m_7527_
@@ -193,49 +204,38 @@ Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/cu
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/essence_conversion_machine/EssenceConversionMachineRecipe/assemble(Lnet/minecraft/world/Container;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/item/crafting/Recipe/assemble(Lnet/minecraft/world/Container;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/world/item/ItemStack;: assemble -> m_5874_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/essence_conversion_machine/EssenceConversionMachineRecipe/getType()Lnet/minecraft/world/item/crafting/RecipeType; from net/minecraft/world/item/crafting/Recipe/getType()Lnet/minecraft/world/item/crafting/RecipeType;: getType -> m_6671_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/essence_conversion_machine/EssenceConversionMachineRecipe/getSerializer()Lnet/minecraft/world/item/crafting/RecipeSerializer; from net/minecraft/world/item/crafting/Recipe/getSerializer()Lnet/minecraft/world/item/crafting/RecipeSerializer;: getSerializer -> m_7707_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity$1/getCount()I from net/minecraft/world/inventory/ContainerData/getCount()I: getCount -> m_6499_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity$1/get(I)I from net/minecraft/world/inventory/ContainerData/get(I)I: get -> m_6413_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity$1/set(II)V from net/minecraft/world/inventory/ContainerData/set(II)V: set -> m_8050_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/EssenceFurnaceBlockEntity/getDisplayName()Lnet/minecraft/network/chat/Component; from net/minecraft/world/MenuProvider/getDisplayName()Lnet/minecraft/network/chat/Component;: getDisplayName -> m_5446_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/LevitationMachineBlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag; from net/minecraft/world/level/block/entity/BlockEntity/getUpdateTag()Lnet/minecraft/nbt/CompoundTag;: getUpdateTag -> m_5995_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/LevitationMachineBlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet; from net/minecraft/world/level/block/entity/BlockEntity/getUpdatePacket()Lnet/minecraft/network/protocol/Packet;: getUpdatePacket -> m_58483_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/LevitationMachineBlockEntity/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/LevitationMachineBlockEntity/getDisplayName()Lnet/minecraft/network/chat/Component; from net/minecraft/world/MenuProvider/getDisplayName()Lnet/minecraft/network/chat/Component;: getDisplayName -> m_5446_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/ShredderBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/VoidEssenceCollectorBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/VoidEssenceCollectorBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/ShredderBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/blockentity/ShredderBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/FacingBlock/getStateForPlacement(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState; from net/minecraft/world/level/block/Block/getStateForPlacement(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;: getStateForPlacement -> m_5573_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/FacingBlock/createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V from net/minecraft/world/level/block/Block/createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V: createBlockStateDefinition -> m_7926_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/AdvanceShredder/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V from net/minecraft/world/level/block/state/BlockBehaviour/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V: onRemove -> m_6810_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/AdvanceShredder/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult; from net/minecraft/world/level/block/state/BlockBehaviour/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;: use -> m_6227_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/AdvanceShredder/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/AdvanceShredder/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/AirEssenceCollector/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/AirEssenceCollector/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceConversionMachine/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V from net/minecraft/world/level/block/state/BlockBehaviour/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V: onRemove -> m_6810_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceConversionMachine/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult; from net/minecraft/world/level/block/state/BlockBehaviour/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;: use -> m_6227_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceConversionMachine/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceConversionMachine/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceFurnace/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceFurnace/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceFurnace/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceFurnace/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult; from net/minecraft/world/level/block/state/BlockBehaviour/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;: use -> m_6227_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/levitation/LevitationMachineMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/levitation/LevitationMachineMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/LevitationMachine/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V from net/minecraft/world/level/block/state/BlockBehaviour/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V: onRemove -> m_6810_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/LevitationMachine/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult; from net/minecraft/world/level/block/state/BlockBehaviour/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;: use -> m_6227_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/LevitationMachine/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/LevitationMachine/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceConversionMachine/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V from net/minecraft/world/level/block/state/BlockBehaviour/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V: onRemove -> m_6810_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceConversionMachine/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult; from net/minecraft/world/level/block/state/BlockBehaviour/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;: use -> m_6227_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/AdvanceShredder/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V from net/minecraft/world/level/block/state/BlockBehaviour/onRemove(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Z)V: onRemove -> m_6810_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceConversionMachine/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/EssenceConversionMachine/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/AdvanceShredder/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult; from net/minecraft/world/level/block/state/BlockBehaviour/use(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;: use -> m_6227_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/AdvanceShredder/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/AdvanceShredder/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/Shredder/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/Shredder/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/VoidEssenceCollector/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/VoidEssenceCollector/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/VoidHopper/getRenderShape(Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape; from net/minecraft/world/level/block/state/BlockBehaviour/getRenderShape(Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/RenderShape;: getRenderShape -> m_7514_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/VoidHopper/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/VoidHopper/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/VoidEssenceCollector/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker; from net/minecraft/world/level/block/EntityBlock/getTicker(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntityType;)Lnet/minecraft/world/level/block/entity/BlockEntityTicker;: getTicker -> m_142354_
-Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/blocks/custom/VoidEssenceCollector/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity; from net/minecraft/world/level/block/EntityBlock/newBlockEntity(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/entity/BlockEntity;: newBlockEntity -> m_142194_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/levitation/LevitationMachineMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
+Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/levitation/LevitationMachineMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
 Conflicting propagated mapping for net/minecraftforge/client/model/generators/ModelProvider/run(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture; from net/minecraft/data/DataProvider/run(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture;: run -> m_213708_
 Conflicting propagated mapping for net/minecraftforge/client/model/generators/ItemModelProvider/getName()Ljava/lang/String; from net/minecraft/data/DataProvider/getName()Ljava/lang/String;: getName -> m_6055_
 Conflicting propagated mapping for net/minecraftforge/common/data/LanguageProvider/run(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture; from net/minecraft/data/DataProvider/run(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture;: run -> m_213708_
@@ -256,12 +256,12 @@ Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/advan
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/essence_conversion_machine/EssenceConversionMachineMenu$1/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/essence_conversion_machine/EssenceConversionMachineScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/essence_conversion_machine/EssenceConversionMachineScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
+Conflicting propagated mapping for net/minecraftforge/network/IContainerFactory/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuType$MenuSupplier/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: create -> m_39994_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/essence_furnace/EssenceFurnaceMenu$1/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/essence_furnace/EssenceFurnaceScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/essence_furnace/EssenceFurnaceScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/levitation/LevitationMachineScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/gui/levitation/LevitationMachineScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
-Conflicting propagated mapping for net/minecraftforge/network/IContainerFactory/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuType$MenuSupplier/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: create -> m_39994_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/advanceshredder/AdvanceShredderRecipeSerializer/fromJson(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/crafting/Recipe; from net/minecraft/world/item/crafting/RecipeSerializer/fromJson(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/crafting/Recipe;: fromJson -> m_6729_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/advanceshredder/AdvanceShredderRecipeSerializer/fromNetwork(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/Recipe; from net/minecraft/world/item/crafting/RecipeSerializer/fromNetwork(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/Recipe;: fromNetwork -> m_8005_
 Conflicting propagated mapping for org/quiltmc/users/duckteam/ducktech/recipe/custom/advanceshredder/AdvanceShredderRecipeSerializer/toNetwork(Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/Recipe;)V from net/minecraft/world/item/crafting/RecipeSerializer/toNetwork(Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/Recipe;)V: toNetwork -> m_6178_
@@ -276,6 +276,8 @@ Sorting
 Writing Output: C:\DuckTech\build\reobfJar\output.jar
   META-INF/
   META-INF/MANIFEST.MF
+  DuckTech.java
+  JEIPlugin.java
   META-INF/jarjar/
   META-INF/jarjar/Recipes_API_Forge_1.20-1.20.1_1.0.0.jar
   META-INF/jarjar/metadata.json
@@ -309,6 +311,7 @@ Writing Output: C:\DuckTech\build\reobfJar\output.jar
   assets/ducktech/blockstates/tin_ore.json
   assets/ducktech/blockstates/void_essence_collector.json
   assets/ducktech/blockstates/void_hopper.json
+  assets/ducktech/ducktech.zip
   assets/ducktech/lang/
   assets/ducktech/lang/en_us.json
   assets/ducktech/lang/zh_cn.json
@@ -594,10 +597,8 @@ Writing Output: C:\DuckTech\build\reobfJar\output.jar
   data/ducktech/recipes/crafting/aluminum_nugget2ingot.json
   data/ducktech/recipes/crafting/br_h.json
   data/ducktech/recipes/crafting/br_mc.json
-  data/ducktech/recipes/crafting/bromze_nugget.json
   data/ducktech/recipes/crafting/bronze.json
   data/ducktech/recipes/crafting/bronze_dust.json
-  data/ducktech/recipes/crafting/bronze_nugget2ingot.json
   data/ducktech/recipes/crafting/chui.json
   data/ducktech/recipes/crafting/cr.json
   data/ducktech/recipes/crafting/ducktechzhuitem.json
@@ -640,7 +641,6 @@ Writing Output: C:\DuckTech\build\reobfJar\output.jar
   data/ducktech/recipes/crushing/al_i.json
   data/ducktech/recipes/crushing/aluminum.json
   data/ducktech/recipes/crushing/aluminum_raw.json
-  data/ducktech/recipes/crushing/br.json
   data/ducktech/recipes/crushing/copper_dust.json
   data/ducktech/recipes/crushing/copper_ingot.json
   data/ducktech/recipes/crushing/copper_rae.json
@@ -667,34 +667,34 @@ Writing Output: C:\DuckTech\build\reobfJar\output.jar
   data/ducktech/recipes/crushing/tin_d.json
   data/ducktech/recipes/crushing/tin_dust.json
   data/ducktech/recipes/crushing/tin_i.json
-  data/ducktech/recipes/ess_con/
-  data/ducktech/recipes/ess_con/a_crushed.json
-  data/ducktech/recipes/ess_con/cokd.json
-  data/ducktech/recipes/ess_con/crush.json
-  data/ducktech/recipes/ess_con/fly.json
-  data/ducktech/recipes/ess_con/hot.json
   data/ducktech/recipes/example/
   data/ducktech/recipes/example/ex.json
   data/ducktech/recipes/example/ext.json
-  data/ducktech/recipes/roasting/
-  data/ducktech/recipes/roasting/aluminum_dore.json
-  data/ducktech/recipes/roasting/aluminum_dust.json
-  data/ducktech/recipes/roasting/aluminum_ore.json
-  data/ducktech/recipes/roasting/aluminum_raw.json
-  data/ducktech/recipes/roasting/br_d.json
-  data/ducktech/recipes/roasting/lead_dore.json
-  data/ducktech/recipes/roasting/lead_dust.json
-  data/ducktech/recipes/roasting/lead_ore.json
-  data/ducktech/recipes/roasting/lead_raw.json
-  data/ducktech/recipes/roasting/silver_dore.json
-  data/ducktech/recipes/roasting/silver_dust.json
-  data/ducktech/recipes/roasting/silver_ore.json
-  data/ducktech/recipes/roasting/silver_raw.json
-  data/ducktech/recipes/roasting/tin_dore.json
-  data/ducktech/recipes/roasting/tin_dust.json
-  data/ducktech/recipes/roasting/tin_ore.json
-  data/ducktech/recipes/roasting/tin_raw.json
+  data/ducktech/recipes/roating/
+  data/ducktech/recipes/roating/aluminum_dore.json
+  data/ducktech/recipes/roating/aluminum_dust.json
+  data/ducktech/recipes/roating/aluminum_ore.json
+  data/ducktech/recipes/roating/aluminum_raw.json
+  data/ducktech/recipes/roating/br_d.json
+  data/ducktech/recipes/roating/lead_dore.json
+  data/ducktech/recipes/roating/lead_dust.json
+  data/ducktech/recipes/roating/lead_ore.json
+  data/ducktech/recipes/roating/lead_raw.json
+  data/ducktech/recipes/roating/silver_dore.json
+  data/ducktech/recipes/roating/silver_dust.json
+  data/ducktech/recipes/roating/silver_ore.json
+  data/ducktech/recipes/roating/silver_raw.json
+  data/ducktech/recipes/roating/tin_dore.json
+  data/ducktech/recipes/roating/tin_dust.json
+  data/ducktech/recipes/roating/tin_ore.json
+  data/ducktech/recipes/roating/tin_raw.json
   data/ducktech/tags/
+  data/ducktech/tags/blocks/
+  data/ducktech/tags/blocks/crusher.json
+  data/ducktech/tags/functions/
+  data/ducktech/tags/functions/load.json
+  data/ducktech/tags/functions/load.json1
+  data/ducktech/tags/functions/tick.json1
   data/ducktech/tags/items/
   data/ducktech/tags/items/essence.json
   data/ducktech/tags/items/gold_gear.json
@@ -726,9 +726,7 @@ Writing Output: C:\DuckTech\build\reobfJar\output.jar
   data/forge/tags/items/dusts.json
   data/forge/tags/items/dusts/
   data/forge/tags/items/dusts/aluminum.json
-  data/forge/tags/items/dusts/bronze.json
   data/forge/tags/items/dusts/copper.json
-  data/forge/tags/items/dusts/diamond.json
   data/forge/tags/items/dusts/gold.json
   data/forge/tags/items/dusts/iron.json
   data/forge/tags/items/dusts/lead.json
@@ -737,17 +735,9 @@ Writing Output: C:\DuckTech\build\reobfJar\output.jar
   data/forge/tags/items/ingots.json
   data/forge/tags/items/ingots/
   data/forge/tags/items/ingots/aluminum.json
-  data/forge/tags/items/ingots/bronze.json
   data/forge/tags/items/ingots/lead.json
   data/forge/tags/items/ingots/silver.json
   data/forge/tags/items/ingots/tin.json
-  data/forge/tags/items/nuggets.json
-  data/forge/tags/items/nuggets/
-  data/forge/tags/items/nuggets/aluminum.json
-  data/forge/tags/items/nuggets/bronze.json
-  data/forge/tags/items/nuggets/lead.json
-  data/forge/tags/items/nuggets/silver.json
-  data/forge/tags/items/nuggets/tin.json
   data/forge/tags/items/ores.json
   data/forge/tags/items/ores/
   data/forge/tags/items/ores/aluminum.json
@@ -757,12 +747,6 @@ Writing Output: C:\DuckTech\build\reobfJar\output.jar
   data/forge/tags/items/ores_in_ground/
   data/forge/tags/items/ores_in_ground/deepslate.json
   data/forge/tags/items/ores_in_ground/stone.json
-  data/forge/tags/items/plates.json
-  data/forge/tags/items/plates/
-  data/forge/tags/items/plates/aluminum.json
-  data/forge/tags/items/plates/bronze.json
-  data/forge/tags/items/plates/iron.json
-  data/forge/tags/items/plates/tin.json
   data/forge/tags/items/raw_materials.json
   data/forge/tags/items/raw_materials/
   data/forge/tags/items/raw_materials/aluminum.json
@@ -772,7 +756,6 @@ Writing Output: C:\DuckTech\build\reobfJar\output.jar
   data/forge/tags/items/storage_blocks.json
   data/forge/tags/items/storage_blocks/
   data/forge/tags/items/storage_blocks/aluminum.json
-  data/forge/tags/items/storage_blocks/bronze.json
   data/forge/tags/items/storage_blocks/lead.json
   data/forge/tags/items/storage_blocks/raw_aluminum.json
   data/forge/tags/items/storage_blocks/raw_lead.json
@@ -794,9 +777,9 @@ Writing Output: C:\DuckTech\build\reobfJar\output.jar
   org/quiltmc/users/duckteam/ducktech/DuckTech.class
   org/quiltmc/users/duckteam/ducktech/api/
   org/quiltmc/users/duckteam/ducktech/api/block/
-  org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlock.class
-  org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlockEntity$1.class
-  org/quiltmc/users/duckteam/ducktech/api/block/DTBaseBlockEntity.class
+  org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlock.class
+  org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlockEntity$1.class
+  org/quiltmc/users/duckteam/ducktech/api/block/ATBaseBlockEntity.class
   org/quiltmc/users/duckteam/ducktech/api/gui/
   org/quiltmc/users/duckteam/ducktech/api/gui/DTBaseMenu.class
   org/quiltmc/users/duckteam/ducktech/api/gui/DTBaseScreen.class
@@ -837,8 +820,6 @@ Writing Output: C:\DuckTech\build\reobfJar\output.jar
   org/quiltmc/users/duckteam/ducktech/compat/jei/
   org/quiltmc/users/duckteam/ducktech/compat/jei/AdvanceShredderRecipeCategory.class
   org/quiltmc/users/duckteam/ducktech/compat/jei/AdvanceShredderRecipeJEIPlugin.class
-  org/quiltmc/users/duckteam/ducktech/compat/jei/EssenceConversionMachineRecipeCategory.class
-  org/quiltmc/users/duckteam/ducktech/compat/jei/EssenceConversionMachineRecipeJEIPlugin.class
   org/quiltmc/users/duckteam/ducktech/compat/jei/ShredderRecipeCategory.class
   org/quiltmc/users/duckteam/ducktech/compat/jei/ShredderRecipeJEIPlugin.class
   org/quiltmc/users/duckteam/ducktech/datagen/

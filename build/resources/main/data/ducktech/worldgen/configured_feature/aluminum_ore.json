@@ -2,7 +2,7 @@
   "type": "minecraft:ore",
   "config": {
     "discard_chance_on_air_exposure": 0.0,
-    "size": 4,
+    "size": 17,
     "targets": [
       {
         "state": {
@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "ducktech:aluminum_ore"
+          "Name": "ducktech:deepslate_aluminum_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
