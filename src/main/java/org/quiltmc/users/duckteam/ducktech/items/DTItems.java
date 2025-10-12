@@ -1,12 +1,13 @@
 package org.quiltmc.users.duckteam.ducktech.items;
 
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
 import org.quiltmc.users.duckteam.ducktech.DuckTech;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.quiltmc.users.duckteam.ducktech.items.armor_material.DTArmorMaterial;
 
 public class DTItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DuckTech.MODID);
@@ -88,6 +89,16 @@ public class DTItems {
     public static final RegistryObject<Item> SACRIFICIAL_KNIFE = ITEMS.register("sacrificial_knife",
             () ->
                     new Item(new Item.Properties().stacksTo(1).durability(64)));
+
+    //盔甲
+    public static final RegistryObject<Item> BASIC_ESSENCE_HELMET_LEVEL_ONE = ITEMS.register("basic_essence_helmet_level_one",
+            () -> new ArmorItem(DTArmorMaterial.BASIC_ESSENCE_LEVEL_ONE, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BASIC_ESSENCE_CHESTPLATE_LEVEL_ONE = ITEMS.register("basic_essence_chestplate_level_one",
+            () -> new ArmorItem(DTArmorMaterial.BASIC_ESSENCE_LEVEL_ONE, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BASIC_ESSENCE_LEGGINGS_LEVEL_ONE = ITEMS.register("basic_essence_leggings_level_one",
+            () -> new ArmorItem(DTArmorMaterial.BASIC_ESSENCE_LEVEL_ONE, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BASIC_ESSENCE_BOOTS_LEVEL_ONE = ITEMS.register("basic_essence_boots_level_one",
+            () -> new ArmorItem(DTArmorMaterial.BASIC_ESSENCE_LEVEL_ONE, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1)));
 
 
     public static RegistryObject<Item> registerSimpleItem(String itemName){
