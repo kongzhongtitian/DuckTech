@@ -70,6 +70,11 @@ public class DTItems {
     public static final RegistryObject<Item> TIN_HULL = registerSimpleItem("tin_hull");
     public static final RegistryObject<Item> BRONZE_HULL = registerSimpleItem("bronze_hull");
 
+    //基础
+    public static final RegistryObject<Item> BASIC_ESSENCE_DUST = registerSimpleItem("basic_essence_dust");
+    public static final RegistryObject<Item> BASIC_ESSENCE_MESH = registerSimpleItem("basic_essence_mesh");
+    public static final RegistryObject<Item> BASIC_ESSENCE_PLATE = registerSimpleItem("basic_essence_plate");
+
     //other
     public static final RegistryObject<Item> RUBBER_DUCK = registerSimpleItem("rubber_duck");
     public static final RegistryObject<Item> RUBBER = registerSimpleItem("rubber");
