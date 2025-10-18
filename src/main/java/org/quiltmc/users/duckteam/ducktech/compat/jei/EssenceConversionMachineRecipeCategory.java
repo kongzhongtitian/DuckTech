@@ -88,7 +88,7 @@ public class EssenceConversionMachineRecipeCategory implements IRecipeCategory<E
 
 
         // 获取所有输出
-        List<ItemStack> outputs = shredderRecipe.getOutput();
+        List<ItemStack> outputs = shredderRecipe.getOutputs();
 
 
         // 根据输出数量动态布局

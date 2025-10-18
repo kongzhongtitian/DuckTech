@@ -47,6 +47,7 @@ public class AdvanceShredder extends FacingBlock implements EntityBlock {
     }
 
 
+
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         if (!level.isClientSide){
@@ -60,6 +61,8 @@ public class AdvanceShredder extends FacingBlock implements EntityBlock {
             }
         }
 
-        return super.use( state, level, pos, player, hand, hitResult);
+        return InteractionResult.SUCCESS;
     }
+
+
 }

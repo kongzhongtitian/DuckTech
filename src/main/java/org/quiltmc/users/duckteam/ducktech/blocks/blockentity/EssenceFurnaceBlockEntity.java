@@ -19,65 +19,24 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseBlockEntity;
+import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseProcessingBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.blocks.DTBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.gui.essence_furnace.EssenceFurnaceMenu;
 import org.quiltmc.users.duckteam.ducktech.items.DTItems;
 import org.quiltmc.users.duckteam.ducktech.sounds.DTSounds;
 
-public class EssenceFurnaceBlockEntity extends DTBaseBlockEntity implements MenuProvider {
-    protected final ContainerData data;
-    private int progress = 0;
-    private int maxProgress = 40;
+public class EssenceFurnaceBlockEntity extends DTBaseProcessingBlockEntity implements MenuProvider {
 
     public EssenceFurnaceBlockEntity( BlockPos p_155229_, BlockState p_155230_) {
         super(DTBlockEntity.ESSENCE_FURNACE_BLOCK_ENTITY.get(), p_155229_, p_155230_);
 
         setItemStackHandler(2);
 
-        data = new ContainerData() {
-            @Override
-            public int get(int index) {
-                return switch (index){
-                    case  0 -> EssenceFurnaceBlockEntity.this.progress;
-                    case  1 -> EssenceFurnaceBlockEntity.this.maxProgress;
-                    default -> 0;
-                };
-            }
-
-            @Override
-            public void set(int index, int value) {
-                switch (index){
-                    case 0:
-                        EssenceFurnaceBlockEntity.this.progress = value;
-                        break;
-                    case 1:
-                        EssenceFurnaceBlockEntity.this.maxProgress = value;
-                        break;
-                }
-            }
-            @Override
-            public int getCount() {
-                return 2;
-            }
-        };
-    }
-
-    @Override
-    public void load(CompoundTag tag) {
-        super.load(tag);
-
-        progress = tag.getInt("progress");
-        maxProgress = tag.getInt("maxProgress");
+        setMaxProgress(40);
 
     }
 
-    @Override
-    protected void saveAdditional(CompoundTag tag) {
-        super.saveAdditional(tag);
 
-        tag.putInt("progress", progress);
-        tag.putInt("maxProgress", maxProgress);
-    }
 
     @Override
     public Component getDisplayName() {
@@ -86,7 +45,7 @@ public class EssenceFurnaceBlockEntity extends DTBaseBlockEntity implements Menu
 
     @Override
     public @Nullable AbstractContainerMenu createMenu(int p_39954_, Inventory p_39955_, Player p_39956_) {
-        return new EssenceFurnaceMenu(p_39954_, p_39955_, this, data);
+        return new EssenceFurnaceMenu(p_39954_, p_39955_, this,this.data);
     }
 
     public void tick(Level level, BlockPos pos, BlockState state ) {

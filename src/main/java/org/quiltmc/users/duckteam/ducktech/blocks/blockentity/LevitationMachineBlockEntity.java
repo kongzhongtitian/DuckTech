@@ -30,6 +30,8 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
+import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseBlockEntity;
+import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseProcessingBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.blocks.DTBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.gui.levitation.LevitationMachineMenu;
 import org.quiltmc.users.duckteam.ducktech.items.DTItems;
@@ -37,17 +39,7 @@ import org.quiltmc.users.duckteam.ducktech.sounds.DTSounds;
 
 import java.util.List;
 
-public class LevitationMachineBlockEntity extends BlockEntity implements MenuProvider {
-    public final ItemStackHandler itemStackHandler = new ItemStackHandler(1){
-        @Override
-        protected void onContentsChanged(int slot) {
-            setChanged();
-            if (!level.isClientSide) {
-                level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
-            }
-            super.onContentsChanged(slot);
-        }
-    };
+public class LevitationMachineBlockEntity extends DTBaseBlockEntity implements MenuProvider {
 
     private int levitationTime = 0;
     private static final int MAX_LEVITATION_TIME = 600; // 30秒
@@ -104,22 +96,7 @@ public class LevitationMachineBlockEntity extends BlockEntity implements MenuPro
         }
     }
 
-    public void drops() {
-        SimpleContainer inv = new SimpleContainer(itemStackHandler.getSlots());
-        for (int i = 0; i < itemStackHandler.getSlots(); i++) {
-            inv.setItem(i, itemStackHandler.getStackInSlot(i));
-        }
-        Containers.dropContents(this.level, this.worldPosition, inv);
-    }
 
-    @Override
-    public CompoundTag getUpdateTag() {
-        return saveWithoutMetadata();
-    }
-    @Override
-    public @Nullable Packet<ClientGamePacketListener> getUpdatePacket() {
-        return ClientboundBlockEntityDataPacket.create(this);
-    }
 
     private AABB getBoundingBox(BlockPos pos, int radius) {
         return new AABB(
@@ -131,55 +108,6 @@ public class LevitationMachineBlockEntity extends BlockEntity implements MenuPro
     private void startLevitationEffect() {
         isLevitating = true;
         levitationTime = 0;
-    }
-
-    // 添加漏斗适配功能
-    @Override
-    public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
-        if (cap == ForgeCapabilities.ITEM_HANDLER) {
-
-            // 创建输入处理器（只允许插入）
-            LazyOptional<IItemHandler> inputHandler = LazyOptional.of(() -> new IItemHandler() {
-                @Override
-                public int getSlots() {
-                    return itemStackHandler.getSlots();
-                }
-
-                @Override
-                public ItemStack getStackInSlot(int slot) {
-                    // 不允许通过漏斗查看内部物品
-                    return ItemStack.EMPTY;
-                }
-
-                @Override
-                public ItemStack insertItem(int slot, ItemStack stack, boolean simulate) {
-                    // 只允许向槽位0插入
-                    if (slot == 0 && stack.getItem().equals(DTItems.AIR_ESSENCE.get())) {
-                        return itemStackHandler.insertItem(slot, stack, simulate);
-                    }
-                    return stack;
-                }
-
-                @Override
-                public ItemStack extractItem(int slot, int amount, boolean simulate) {
-                    // 不允许通过漏斗提取物品
-                    return ItemStack.EMPTY;
-                }
-
-                @Override
-                public int getSlotLimit(int slot) {
-                    return itemStackHandler.getSlotLimit(slot);
-                }
-
-                @Override
-                public boolean isItemValid(int slot, ItemStack stack) {
-                    // 只有槽位0可以接受AIR_ESSENCE物品
-                    return slot == 0 && stack.getItem().equals(DTItems.AIR_ESSENCE.get());
-                }
-            });
-            return inputHandler.cast();
-        }
-        return super.getCapability(cap, side);
     }
 
     protected final ContainerData data;

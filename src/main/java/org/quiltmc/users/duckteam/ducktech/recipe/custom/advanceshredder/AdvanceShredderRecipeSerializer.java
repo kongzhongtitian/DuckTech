@@ -11,55 +11,23 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.users.duckteam.ducktech.DuckTech;
+import org.quiltmc.users.duckteam.ducktech.api.recipes.InputOutputRecipeSerializer;
 import org.quiltmc.users.duckteam.ducktech.recipe.CountedIngredient;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdvanceShredderRecipeSerializer implements RecipeSerializer<AdvanceShredderRecipe> {
-
+public class AdvanceShredderRecipeSerializer extends InputOutputRecipeSerializer<AdvanceShredderRecipe> {
     public static final AdvanceShredderRecipeSerializer INSTANCE = new AdvanceShredderRecipeSerializer();
-    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(DuckTech.MODID, "advance_shredder");
 
-    @Override
-    public AdvanceShredderRecipe fromJson(ResourceLocation recipeId, JsonObject jsonObject) {
-        List<CountedIngredient> inputs = new ArrayList<>();
-        if (jsonObject.has("input")) {
-            JsonElement inputElement = jsonObject.get("input");
-            if (inputElement.isJsonObject()) {
-                inputs.add(CountedIngredient.fromJson(inputElement.getAsJsonObject()));
-            } else if (inputElement.isJsonArray()) {
-                JsonArray inputsArray = inputElement.getAsJsonArray();
-                int maxInputs = Math.min(inputsArray.size(), 2);
-                for (int i = 0; i < maxInputs; i++) {
-                    inputs.add(CountedIngredient.fromJson(inputsArray.get(i).getAsJsonObject()));
-                }
-            }
-        }
-
-        List<ItemStack> outputs = new ArrayList<>();
-        if (jsonObject.has("output")) {
-            JsonArray outputsArray = GsonHelper.getAsJsonArray(jsonObject, "output");
-            int maxOutputs = Math.min(outputsArray.size(), 3);
-            for (int i = 0; i < maxOutputs; i++) {
-                JsonElement element = outputsArray.get(i);
-                outputs.add(ShapedRecipe.itemStackFromJson(element.getAsJsonObject()));
-            }
-        }
-
-        //默认为20t
-        int processingTime = GsonHelper.getAsInt(jsonObject, "processingTime", 20);
-
-        return new AdvanceShredderRecipe(inputs, outputs, recipeId, processingTime);
+    public AdvanceShredderRecipeSerializer() {
+        super(data -> new AdvanceShredderRecipe(data.inputs, data.outputs, data.id, data.processingTime), 2, 3);
     }
 
+    //如果需要自定义处理时间默认值，可以重写该方法
     @Override
-    public @Nullable AdvanceShredderRecipe fromNetwork(ResourceLocation recipeId, FriendlyByteBuf buffer) {
-        return AdvanceShredderRecipe.fromNetwork(recipeId, buffer);
-    }
-
-    @Override
-    public void toNetwork(FriendlyByteBuf buffer, AdvanceShredderRecipe recipe) {
-        recipe.toNetwork(buffer);
+    protected int readProcessingTimeFromJson(JsonObject jsonObject) {
+        return GsonHelper.getAsInt(jsonObject, "processingTime", 20);
     }
 }
+
