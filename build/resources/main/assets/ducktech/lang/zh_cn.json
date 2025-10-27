@@ -75,6 +75,10 @@
   "block.ducktech.void_hopper" : "虚空漏斗",
   "block.ducktech.essence_furnace" : "精华炉",
   "block.ducktech.essence_conversion_machine": "精华转化机",
+  "item.ducktech.bronze_nugget": "青铜粒",
+  "item.ducktech.basic_essence_dust": "基础精华粉",
+  "item.ducktech.basic_essence_mesh": "基础精华网",
+  "item.ducktech.basic_essence_plate": "基础精华板",
 
   "jei.tooltip.time": "耗时",
   "subtitles.ducktech.zaoyin": "机器：噪音"
