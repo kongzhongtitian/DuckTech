@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import org.quiltmc.users.duckteam.ducktech.blocks.DTBlockEntity;
+import org.quiltmc.users.duckteam.ducktech.config.DTConfig;
 import org.quiltmc.users.duckteam.ducktech.recipe.CountedIngredient;
 import org.quiltmc.users.duckteam.ducktech.recipe.DTRecipe;
 import org.quiltmc.users.duckteam.ducktech.recipe.custom.shredder.ShredderRecipe;
@@ -57,7 +58,7 @@ public class ShredderBlockEntity extends BlockEntity {
 
         if (recipe.isPresent()) {
             // 找到匹配的配方，开始处理
-            if (!level.isClientSide()) {
+            if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
                 level.playSound(null, pos,
                         DTSounds.ZAOYIN.get(),
                         SoundSource.BLOCKS,

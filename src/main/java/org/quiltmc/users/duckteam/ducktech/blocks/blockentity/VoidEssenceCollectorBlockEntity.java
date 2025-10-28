@@ -8,6 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.quiltmc.users.duckteam.ducktech.blocks.DTBlockEntity;
+import org.quiltmc.users.duckteam.ducktech.config.DTConfig;
 import org.quiltmc.users.duckteam.ducktech.items.DTItems;
 import org.quiltmc.users.duckteam.ducktech.sounds.DTSounds;
 
@@ -39,7 +40,7 @@ public class VoidEssenceCollectorBlockEntity extends BlockEntity {
         if (currentTime < ticks) {
             currentTime++;
         } else {
-            if (!level.isClientSide()) {
+            if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
                 level.playSound(null, pos,
                         DTSounds.ZAOYIN.get(),
                         SoundSource.BLOCKS,

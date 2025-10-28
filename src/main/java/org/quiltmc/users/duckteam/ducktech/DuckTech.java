@@ -6,6 +6,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.quiltmc.users.duckteam.ducktech.blocks.*;
+import org.quiltmc.users.duckteam.ducktech.config.DTConfig;
 import org.quiltmc.users.duckteam.ducktech.gui.DTMenu;
 import org.quiltmc.users.duckteam.ducktech.items.*;
 import org.quiltmc.users.duckteam.ducktech.recipe.*;
@@ -16,7 +17,7 @@ public class DuckTech {
     public static final String MODID = "ducktech";
     public static final String MOD_ID = MODID;
 
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public DuckTech(FMLJavaModLoadingContext context)
     {
@@ -29,9 +30,10 @@ public class DuckTech {
         LOGGER.info("|     | |    | |       |l       |     |     |       |    |");
         LOGGER.info("|     | |    | |     / | l      |     |     |     / |    |");
         LOGGER.info("|----/  l----|  l----  |  l     |     |----  l----  |    |");
-        LOGGER.info("DuckTech Version:1.-1.6");
+        LOGGER.info("DuckTech Version:1.-1.7");
         DTCreativeTab.CREATIVE_TABS.register(modEventBus);
         DTSounds.SOUND_EVENTS.register(modEventBus);
+        DTConfig.init();
         DTBlocks.BLOCKS.register(modEventBus);
         DTItems.ITEMS.register(modEventBus);
         DTBlockEntity.BLOCK_ENTITY_TYPES.register(modEventBus);

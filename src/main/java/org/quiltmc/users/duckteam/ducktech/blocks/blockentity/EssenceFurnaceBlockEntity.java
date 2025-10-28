@@ -21,6 +21,7 @@ import org.jetbrains.annotations.Nullable;
 import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseProcessingBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.blocks.DTBlockEntity;
+import org.quiltmc.users.duckteam.ducktech.config.DTConfig;
 import org.quiltmc.users.duckteam.ducktech.gui.essence_furnace.EssenceFurnaceMenu;
 import org.quiltmc.users.duckteam.ducktech.items.DTItems;
 import org.quiltmc.users.duckteam.ducktech.sounds.DTSounds;
@@ -56,7 +57,7 @@ public class EssenceFurnaceBlockEntity extends DTBaseProcessingBlockEntity imple
                 if (progress < maxProgress) {
                     progress++;
                 } else {
-                    if (!level.isClientSide()) {
+                    if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
                         level.playSound(null, pos,
                                 DTSounds.ZAOYIN.get(),
                                 SoundSource.BLOCKS,

@@ -30,6 +30,7 @@ import org.jetbrains.annotations.Nullable;
 import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseProcessingBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.api.recipes.InputOutputRecipe;
 import org.quiltmc.users.duckteam.ducktech.blocks.DTBlockEntity;
+import org.quiltmc.users.duckteam.ducktech.config.DTConfig;
 import org.quiltmc.users.duckteam.ducktech.gui.essence_conversion_machine.EssenceConversionMachineMenu;
 import org.quiltmc.users.duckteam.ducktech.recipe.CountedIngredient;
 import org.quiltmc.users.duckteam.ducktech.recipe.DTRecipe;
@@ -80,7 +81,7 @@ public class EssenceConversionMachineBlockEntity extends DTBaseProcessingBlockEn
             if (progress >= maxProgress) {
                 craftItem(recipe.get());
                 resetProgress();
-                if (!level.isClientSide()) {
+                if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
                     level.playSound(null, pos,
                             DTSounds.ZAOYIN.get(),
                             SoundSource.BLOCKS,

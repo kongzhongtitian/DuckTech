@@ -33,6 +33,7 @@ import org.jetbrains.annotations.Nullable;
 import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.api.block.DTBaseProcessingBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.blocks.DTBlockEntity;
+import org.quiltmc.users.duckteam.ducktech.config.DTConfig;
 import org.quiltmc.users.duckteam.ducktech.gui.levitation.LevitationMachineMenu;
 import org.quiltmc.users.duckteam.ducktech.items.DTItems;
 import org.quiltmc.users.duckteam.ducktech.sounds.DTSounds;
@@ -50,7 +51,7 @@ public class LevitationMachineBlockEntity extends DTBaseBlockEntity implements M
 
         // 检查是否有AIR_ESSENCE物品，如果有则启动效果
         if (!isLevitating && itemStackHandler.getStackInSlot(0).getItem().equals(DTItems.AIR_ESSENCE.get())) {
-            if (!level.isClientSide()) {
+            if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
                 level.playSound(null, pos,
                         DTSounds.ZAOYIN.get(),
                         SoundSource.BLOCKS,
