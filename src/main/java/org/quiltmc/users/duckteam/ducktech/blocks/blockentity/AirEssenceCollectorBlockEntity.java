@@ -41,7 +41,7 @@ public class AirEssenceCollectorBlockEntity extends BlockEntity {
                 if (currentTime < 80) {
                     currentTime++;
                 } else {
-                    if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
+                    if (!level.isClientSide()&& DTConfig.switch_sound()) {
                         level.playSound(null, pos,
                                 DTSounds.ZAOYIN.get(),
                                 SoundSource.BLOCKS,

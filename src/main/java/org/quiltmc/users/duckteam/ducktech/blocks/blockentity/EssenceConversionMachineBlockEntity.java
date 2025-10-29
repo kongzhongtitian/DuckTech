@@ -81,7 +81,7 @@ public class EssenceConversionMachineBlockEntity extends DTBaseProcessingBlockEn
             if (progress >= maxProgress) {
                 craftItem(recipe.get());
                 resetProgress();
-                if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
+                if (!level.isClientSide()&& DTConfig.switch_sound()) {
                     level.playSound(null, pos,
                             DTSounds.ZAOYIN.get(),
                             SoundSource.BLOCKS,

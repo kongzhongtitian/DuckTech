@@ -51,7 +51,7 @@ public class LevitationMachineBlockEntity extends DTBaseBlockEntity implements M
 
         // 检查是否有AIR_ESSENCE物品，如果有则启动效果
         if (!isLevitating && itemStackHandler.getStackInSlot(0).getItem().equals(DTItems.AIR_ESSENCE.get())) {
-            if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
+            if (!level.isClientSide()&& DTConfig.switch_sound()) {
                 level.playSound(null, pos,
                         DTSounds.ZAOYIN.get(),
                         SoundSource.BLOCKS,

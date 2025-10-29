@@ -57,7 +57,7 @@ public class EssenceFurnaceBlockEntity extends DTBaseProcessingBlockEntity imple
                 if (progress < maxProgress) {
                     progress++;
                 } else {
-                    if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
+                    if (!level.isClientSide()&& DTConfig.switch_sound()) {
                         level.playSound(null, pos,
                                 DTSounds.ZAOYIN.get(),
                                 SoundSource.BLOCKS,

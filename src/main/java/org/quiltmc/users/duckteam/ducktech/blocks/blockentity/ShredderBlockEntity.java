@@ -58,7 +58,7 @@ public class ShredderBlockEntity extends BlockEntity {
 
         if (recipe.isPresent()) {
             // 找到匹配的配方，开始处理
-            if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
+            if (!level.isClientSide()&& DTConfig.switch_sound()) {
                 level.playSound(null, pos,
                         DTSounds.ZAOYIN.get(),
                         SoundSource.BLOCKS,

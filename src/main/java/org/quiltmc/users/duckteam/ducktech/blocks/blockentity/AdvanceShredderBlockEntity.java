@@ -82,7 +82,7 @@ public class AdvanceShredderBlockEntity extends DTBaseProcessingBlockEntity impl
 
             if (progress >= maxProgress) {
                 craftItem(basicRecipe.get());
-                if (!level.isClientSide()&& DTConfig.SWITCH_SOUND) {
+                if (!level.isClientSide()&&DTConfig.switch_sound()) {
                     level.playSound(null, pos,
                             DTSounds.ZAOYIN.get(),
                             SoundSource.BLOCKS,
