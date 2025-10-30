@@ -12,13 +12,12 @@ public class DTConfig {
     public static final ForgeConfigSpec.BooleanValue SWITCH_SOUND;
 
     static {
-        BUILDER.push("DuckTech Configuration");
+        //BUILDER.push("DuckTech Configuration");
 
         SWITCH_SOUND = BUILDER
-                .comment("Enable debug mode for DuckTech")
-                .define("debugMode", false);
+                .define("switchSound", true);
 
-        BUILDER.pop();
+        //BUILDER.pop();
 
         SPEC = BUILDER.build();
     }
