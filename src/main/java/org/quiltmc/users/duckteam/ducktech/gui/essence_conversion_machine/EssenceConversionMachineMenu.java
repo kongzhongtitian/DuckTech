@@ -34,7 +34,7 @@ public class EssenceConversionMachineMenu extends DTBaseMenu {
 
         this.addSlot(new SlotItemHandler(itemHandler,0,49,40));
         this.addSlot(new SlotItemHandler(itemHandler,1,80,18));
-        this.addSlot(new SlotItemHandler(itemHandler,2,110,40){
+        this.addSlot(new SlotItemHandler(itemHandler,2,111,40){
             @Override
             public boolean mayPlace(ItemStack stack) {
                 return false;

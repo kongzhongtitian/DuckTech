@@ -33,7 +33,7 @@ public class DuckTech {
         LOGGER.info("|     | |    | |       |l       |     |     |       |    |");
         LOGGER.info("|     | |    | |     / | l      |     |     |     / |    |");
         LOGGER.info("|----/  l----|  l----  |  l     |     |----  l----  |    |");
-        LOGGER.info("DuckTech Version:1.-1.7");
+        LOGGER.info("DuckTech Version:1.-1.8");
 
         DTCreativeTab.CREATIVE_TABS.register(modEventBus);
         DTSounds.SOUND_EVENTS.register(modEventBus);
