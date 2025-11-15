@@ -33,7 +33,7 @@ public class DuckTech {
         LOGGER.info("|     | |    | |       |l       |     |     |       |    |");
         LOGGER.info("|     | |    | |     / | l      |     |     |     / |    |");
         LOGGER.info("|----/  l----|  l----  |  l     |     |----  l----  |    |");
-        LOGGER.info("DuckTech Version:1.-1.8");
+        LOGGER.info("DuckTech Version:1.-1.9");
 
         DTCreativeTab.CREATIVE_TABS.register(modEventBus);
         DTSounds.SOUND_EVENTS.register(modEventBus);
@@ -47,6 +47,6 @@ public class DuckTech {
     }
     private void onConstructMod(final FMLConstructModEvent event) {
         // 在这里处理 FMLConstructModEvent
-        LOGGER.info("FMLConstructModEvent 已触发!");
+        LOGGER.info("DuckTech:FMLConstructModEvent 已触发!");
     }
 }

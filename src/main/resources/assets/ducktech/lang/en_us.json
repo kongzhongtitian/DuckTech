@@ -79,6 +79,18 @@
   "block.ducktech.void_hopper" : "Void Hopper",
   "block.ducktech.essence_furnace" : "Essence Furnace",
   "block.ducktech.essence_conversion_machine": "Essence Conversion Machine",
+  "item.ducktech.basic_essence_helmet_level_one": "基础精华头盔",
+  "item.ducktech.basic_essence_chestplate_level_one": "基础精华胸甲",
+  "item.ducktech.basic_essence_leggings_level_one": "基础精华护腿",
+  "item.ducktech.basic_essence_boots_level_one": "基础精华靴子",
+  "item.ducktech.basic_essence_helmet_level_two": "基础精华头盔",
+  "item.ducktech.basic_essence_chestplate_level_two": "基础精华胸甲",
+  "item.ducktech.basic_essence_leggings_level_two": "基础精华护腿",
+  "item.ducktech.basic_essence_boots_level_two": "基础精华靴子",
+  "item.ducktech.basic_essence_helmet_level_three": "基础精华头盔",
+  "item.ducktech.basic_essence_chestplate_level_three": "基础精华胸甲",
+  "item.ducktech.basic_essence_leggings_level_three": "基础精华护腿",
+  "item.ducktech.basic_essence_boots_level_three": "基础精华靴子",
 
   "jei.tooltip.time": "time-consuming",
   "subtitles.ducktech.zaoyin": "Machines: Noises"
