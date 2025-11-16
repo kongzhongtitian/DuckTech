@@ -9,6 +9,8 @@ import org.quiltmc.users.duckteam.ducktech.recipe.custom.advanceshredder.Advance
 import org.quiltmc.users.duckteam.ducktech.recipe.custom.advanceshredder.AdvanceShredderRecipeSerializer;
 import org.quiltmc.users.duckteam.ducktech.recipe.custom.essence_conversion_machine.EssenceConversionMachineRecipe;
 import org.quiltmc.users.duckteam.ducktech.recipe.custom.essence_conversion_machine.EssenceConversionMachineRecipeSerializer;
+import org.quiltmc.users.duckteam.ducktech.recipe.custom.injection_machine.InjectionMachineRecipe;
+import org.quiltmc.users.duckteam.ducktech.recipe.custom.injection_machine.InjectionMachineRecipeSerializer;
 import org.quiltmc.users.duckteam.ducktech.recipe.custom.shredder.ShredderRecipe;
 import org.quiltmc.users.duckteam.ducktech.recipe.custom.shredder.ShredderRecipeSerializer;
 
@@ -24,4 +26,7 @@ public class DTRecipeSerializers {
 
     public static final RegistryObject<RecipeSerializer<EssenceConversionMachineRecipe>> ESSENCE_CONVERSION_MACHINE_SERIALIZER =
             SERIALIZERS.register("essence_conversion_machine", () -> EssenceConversionMachineRecipeSerializer.INSTANCE);
+
+    public static final RegistryObject<RecipeSerializer<InjectionMachineRecipe>> INJECTION_MACHINE_SERIALIZER =
+            SERIALIZERS.register("injection_machine", () -> InjectionMachineRecipeSerializer.INSTANCE);
 }

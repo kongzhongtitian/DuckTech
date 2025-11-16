@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import org.quiltmc.users.duckteam.ducktech.DuckTech;
 import org.quiltmc.users.duckteam.ducktech.recipe.custom.advanceshredder.AdvanceShredderRecipe;
 import org.quiltmc.users.duckteam.ducktech.recipe.custom.essence_conversion_machine.EssenceConversionMachineRecipe;
+import org.quiltmc.users.duckteam.ducktech.recipe.custom.injection_machine.InjectionMachineRecipe;
 import org.quiltmc.users.duckteam.ducktech.recipe.custom.shredder.ShredderRecipe;
 
 import java.util.function.Supplier;
@@ -37,5 +38,11 @@ public class DTRecipe {
             RECIPE_TYPES.register(
                     "essence_conversion_machine_recipe",
                     () -> RecipeType.<EssenceConversionMachineRecipe>simple(ResourceLocation.fromNamespaceAndPath(DuckTech.MODID, "essence_conversion_machine_recipe"))
+            );
+
+    public static final Supplier<RecipeType<InjectionMachineRecipe>>INJECTION_MACHINE_RECIPE =
+            RECIPE_TYPES.register(
+                    "injection_machine_recipe",
+                    () -> RecipeType.<InjectionMachineRecipe>simple(ResourceLocation.fromNamespaceAndPath(DuckTech.MODID, "injection_machine_recipe"))
             );
 }

@@ -42,4 +42,8 @@ public class DTBlockEntity {
     public static final RegistryObject<BlockEntityType<EssenceConversionMachineBlockEntity>> ESSENCE_CONVERSION_MACHINE_BLOCK_ENTITY =
             BLOCK_ENTITY_TYPES.register("essence_conversion_machine_block_entity", () -> BlockEntityType.Builder.of(
                     EssenceConversionMachineBlockEntity::new, DTBlocks.ESSENCE_CONVERSION_MACHINE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<InjectionMachineBlockEntity>> INJECTION_MACHINE_BLOCK_ENTITY =
+            BLOCK_ENTITY_TYPES.register("injection_machine_block_entity", () -> BlockEntityType.Builder.of(
+                    InjectionMachineBlockEntity::new, DTBlocks.INJECTION_MACHINE.get()).build(null));
 }

@@ -10,6 +10,7 @@ import org.quiltmc.users.duckteam.ducktech.gui.advance_shredder.AdvanceShredderS
 import org.quiltmc.users.duckteam.ducktech.gui.essence_conversion_machine.EssenceConversionMachineScreen;
 import org.quiltmc.users.duckteam.ducktech.gui.essence_furnace.EssenceFurnaceScreen;
 import org.quiltmc.users.duckteam.ducktech.gui.levitation.LevitationMachineScreen;
+import org.quiltmc.users.duckteam.ducktech.gui.injection_machine.InjectionMachineScreen;
 
 @Mod.EventBusSubscriber(modid = DuckTech.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ScreenRegister {
@@ -20,6 +21,7 @@ public class ScreenRegister {
             MenuScreens.register(DTMenu.LEVITATION_MACHINE_MENU.get(), LevitationMachineScreen::new);
             MenuScreens.register(DTMenu.ESSENCE_FURNACE_MENU.get(), EssenceFurnaceScreen::new);
             MenuScreens.register(DTMenu.ESSENCE_CONVERSION_MACHINE_MENU.get(), EssenceConversionMachineScreen::new);
+            MenuScreens.register(DTMenu.INJECTION_MACHINE_MENU.get(), InjectionMachineScreen::new);
         });
     }
 }

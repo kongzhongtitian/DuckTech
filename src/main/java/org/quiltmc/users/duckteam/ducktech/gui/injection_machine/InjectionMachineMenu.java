@@ -10,14 +10,15 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 import org.quiltmc.users.duckteam.ducktech.api.gui.DTBaseMenu;
 import org.quiltmc.users.duckteam.ducktech.blocks.blockentity.EssenceConversionMachineBlockEntity;
+import org.quiltmc.users.duckteam.ducktech.blocks.blockentity.InjectionMachineBlockEntity;
 import org.quiltmc.users.duckteam.ducktech.gui.DTMenu;
 
 public class InjectionMachineMenu extends DTBaseMenu {
-    public final EssenceConversionMachineBlockEntity blockEntity;
+    public final InjectionMachineBlockEntity blockEntity;
     private final ContainerData data;
 
     public InjectionMachineMenu(int containerId, Inventory inv, BlockEntity entity , ContainerData data) {
-        super(DTMenu.ESSENCE_CONVERSION_MACHINE_MENU.get(),containerId, inv, entity);
+        super(DTMenu.INJECTION_MACHINE_MENU.get(),containerId, inv, entity);
 
 
         addDataSlots(data);
@@ -25,7 +26,7 @@ public class InjectionMachineMenu extends DTBaseMenu {
         //Player player = (Player) event.getEntity();
         //player.inventory.add
         addPlayerHotbar(inv);
-        blockEntity = (EssenceConversionMachineBlockEntity) entity;
+        blockEntity = (InjectionMachineBlockEntity) entity;
 
         this.data = data;
 
@@ -54,7 +55,7 @@ public class InjectionMachineMenu extends DTBaseMenu {
     }
 
     public InjectionMachineMenu(int containerId, Inventory inventory, FriendlyByteBuf friendlyByteBuf ){
-        this(containerId, inventory, ((EssenceConversionMachineBlockEntity) inventory.player.level().getBlockEntity(friendlyByteBuf.readBlockPos())), new SimpleContainerData(3));
+        this(containerId, inventory, ((InjectionMachineBlockEntity) inventory.player.level().getBlockEntity(friendlyByteBuf.readBlockPos())), new SimpleContainerData(3));
     }
 
     @Override

@@ -137,6 +137,8 @@ public class DTBlocks {
 
     public static final RegistryObject<Block> ESSENCE_CONVERSION_MACHINE = registerBlock("essence_conversion_machine", () -> new EssenceConversionMachine(BlockBehaviour.Properties.of()));
 
+    public static final RegistryObject<Block> INJECTION_MACHINE = registerBlock("injection_machine", () -> new InjectionMachine(BlockBehaviour.Properties.of()));
+
     public static RegistryObject<Block> registerSimpleBlock(String name, BlockBehaviour.Properties properties) {
         RegistryObject<Block> block = BLOCKS.register(name, () -> new Block(properties));
         DTItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

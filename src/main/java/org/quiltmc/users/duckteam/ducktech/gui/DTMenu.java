@@ -31,5 +31,5 @@ public class DTMenu {
             MENUS.register("essence_conversion_machine_menu", () -> IForgeMenuType.create(EssenceConversionMachineMenu::new));
 
     public static final RegistryObject<MenuType<InjectionMachineMenu>> INJECTION_MACHINE_MENU =
-            MENUS.register("injection_conversion_machine_menu", () -> IForgeMenuType.create(InjectionMachineMenu::new));
+            MENUS.register("injection_machine_menu", () -> IForgeMenuType.create(InjectionMachineMenu::new));
 }
