@@ -10,6 +10,7 @@ import org.quiltmc.users.duckteam.ducktech.DuckTech;
 import org.quiltmc.users.duckteam.ducktech.gui.advance_shredder.AdvanceShredderMenu;
 import org.quiltmc.users.duckteam.ducktech.gui.essence_conversion_machine.EssenceConversionMachineMenu;
 import org.quiltmc.users.duckteam.ducktech.gui.essence_furnace.EssenceFurnaceMenu;
+import org.quiltmc.users.duckteam.ducktech.gui.injection_machine.InjectionMachineMenu;
 import org.quiltmc.users.duckteam.ducktech.gui.levitation.LevitationMachineMenu;
 
 public class DTMenu {
@@ -28,4 +29,7 @@ public class DTMenu {
 
     public static final RegistryObject<MenuType<EssenceConversionMachineMenu>> ESSENCE_CONVERSION_MACHINE_MENU =
             MENUS.register("essence_conversion_machine_menu", () -> IForgeMenuType.create(EssenceConversionMachineMenu::new));
+
+    public static final RegistryObject<MenuType<InjectionMachineMenu>> INJECTION_MACHINE_MENU =
+            MENUS.register("injection_conversion_machine_menu", () -> IForgeMenuType.create(InjectionMachineMenu::new));
 }
